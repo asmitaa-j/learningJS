@@ -5,11 +5,75 @@
         <title> Rock Paper Scissors</title>
         <style>
 
+           body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            padding: 2rem;
+           }
+
+           button {
+            border-radius: 10%;
+            border-color: white;
+            width: 3cm;
+            height: 2rem;
+            margin: 1rem;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: rgb(38, 11, 103);
+           } 
+
+           .rock {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: last baseline;
+            width: 5cm;
+            height:5cm;
+            background-color: antiquewhite;
+            margin: 2rem;
+            border-radius: 10%;
+           } 
+
+           .paper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: last baseline;
+            width: 5cm;
+            height: 5cm;
+            background-color: rgb(236, 175, 139);
+            margin: 2rem;
+            border-radius: 10%;
+           }
+
+           .scissors {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: last baseline;
+            width: 5cm;
+            height: 5cm;
+            background-color: rgb(174, 236, 139);
+            margin: 2rem;
+            border-radius: 10%;
+           }
+           img {
+            width: 3cm;
+            height: 3cm;
+           }
+
+
         </style>
     </head>
-    <body>
+    <body> 
+     
         <p> Rock Paper Scissors </p>
-
+        <div class="rock">
+          <img src="images/hand.png">
         <button onclick="
          const randomNumber = Math.random();
          let computerMove = '';
@@ -42,7 +106,11 @@
            ${result}
             `)
 
-        "> Rock</button>
+        "> Rock</button> </div>
+
+        <div class="paper">
+
+          <img src="images/hand-paper.png">
 
         <button onclick=" 
         const randomNumber  = Math.random();
@@ -74,7 +142,12 @@
            ${result}
             `)
         "> Paper</button>
+        </div>
 
+        <div class="scissors">
+
+          <img src="images/scissors.png">
+        
         <button onclick="
         const randomNumber = Math.random();
          let computerMove = '';
@@ -106,7 +179,8 @@
            ${result}
             `)
         "> Scisssors</button>
-   
+        </div>
+      
         <script >
 
         
