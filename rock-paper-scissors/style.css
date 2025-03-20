@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+    margin-right: 4cm;
+   }
+  
+   button {
+    border-radius: 10%;
+    width: 3cm;
+    height: 2rem;
+    margin: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(38, 11, 103);
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 0px;
+   } 
+
+   .rock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5cm;
+    height:5cm;
+    background-color: antiquewhite;
+    margin: 2rem;
+    border-radius: 10%;
+    padding: 1rem;
+    margin-top: 5cm;
+   } 
+
+   .paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5cm;
+    height: 5cm;
+    background-color: rgb(236, 175, 139);
+    margin: 2rem;
+    border-radius: 10%;
+    padding: 1rem;
+    margin-top: 5cm;
+   }
+
+   .scissors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5cm;
+    height: 5cm;
+    background-color: rgb(174, 236, 139);
+    margin: 2rem;
+    border-radius: 10%;
+    padding: 1rem;
+    margin-top: 5cm;
+   }
+   img {
+    width: 3cm;
+    height: 3cm;
+   }
+
+
+   button:hover {
+    transform: scale(1.1); 
+    background-color: rgb(209, 205, 200);
+    border: 5px;
+    border-color: rgb(28, 27, 26);
+   }
+
+   @media  (max-width=) {
+    
+   }
